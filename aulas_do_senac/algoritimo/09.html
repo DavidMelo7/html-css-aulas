@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+
+    manha = Number(window.prompt("quantos minutos você ficou em ligação entre a 0h e as 7h59"));
+    tarde  = Number(window.prompt("quantos minutos você ficou em ligação entre as 8h e as 15h59"));
+    noite = Number(window.prompt("quantos minutos você ficou em ligação entre as 16h e as 23h59"));
+
+    manha1 = manha * 0.155645;
+    tarde2 = tarde * 0.245645;
+    noite3 = noite * 0.354656;
+
+    final = manha1 + tarde2 + noite3;
+
+    window.alert(" valor a pagar " + final + "R$");
+</script>

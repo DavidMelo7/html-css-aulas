@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+
+    tamanho_mb = Number(window.prompt("tamaho do seu arquivo"));
+    velocidade = Number(window.prompt("velocidade da internet"));
+
+    valor1 = velocidade * 125;
+    valor2 = valor1 / 1000;
+    valor3 = tamanho_mb / valor2;
+    valor_final = valor3 / 60;
+
+    window.alert ("seu tempo de download sera de " + valor_final + "minutos" );
+
+</script>
+ 
