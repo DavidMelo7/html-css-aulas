@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste-posição</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* cor de fundo */
+            background-color: black;
+
+            /* img de fundo */
+            background-image: url("imagem/wallpaper003.jpg");
+
+            /* define o ponto que img sera exibida */
+            background-position: center center;
+
+            /* estica a imagem para que preencha toda a pagina */
+            background-size: cover;
+
+            /* não repete a img */
+            background-repeat: no-repeat;
+
+            /* fixa a imagem na tela caso a pagina role para baixo */
+            background-attachment: fixed;
+
+            /* defina a altura do elemento na viewport(tela) */
+            height: 97vh;
+
+            /* aqui é tudo que esta a cima só que comprimido em uma unica linha(só funciona se for nessa ordem) */
+            /* color > image > position > / > size > repeat > attachment.  */
+            background: black url("imagem/wallpaper003.jpg") center center / cover no-repeat fixed;
+
+        }
+        
+        /* a baixo é uma das formas de mover o elemento dentro da sua caixa */
+        header {
+            position: relative;
+            background-color: aliceblue;
+            width: 100%;
+            min-height: 200px;
+        }
+
+        #imagem-logo {
+            width: 200px;
+            position: absolute;
+            right: 1%;
+            top: 2%;
+        }
+        
+        h1 {
+            width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+        
+        main {
+            width: 600px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            border-radius: 5px;
+            border: 2px solid black;
+            background-color: azure;
+            margin: auto;
+            margin-top: 5px;
+        }
+
+        </style>
+</head>
+
+<body>
+    <header>
+        <h1>TITULO 1</h1>
+        <img id="imagem-logo" src="imagem/logo.png" alt="logo">
+    </header>
+    <main>
+        <h1>imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus earum distinctio inventore error
+            quae a, suscipit quidem asperiores nemo porro aperiam quod dicta dolorem harum odit debitis! Distinctio,
+            quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, necessitatibus reiciendis. Sed,
+            consectetur impedit ipsum dolorem velit placeat labore enim exercitationem voluptas, hic itaque iste? Minus
+            nam excepturi sequi placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et ipsa
+            obcaecati laboriosam dolores. Dolore quaerat repellat sit. Temporibus quaerat quisquam dicta molestiae. Ea,
+            dolore fugit sed excepturi neque id?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus earum distinctio inventore error
+            quae a, suscipit quidem asperiores nemo porro aperiam quod dicta dolorem harum odit debitis! Distinctio,
+            quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, necessitatibus reiciendis. Sed,
+            consectetur impedit ipsum dolorem velit placeat labore enim exercitationem voluptas, hic itaque iste? Minus
+            nam excepturi sequi placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et ipsa
+            obcaecati laboriosam dolores. Dolore quaerat repellat sit. Temporibus quaerat quisquam dicta molestiae. Ea,
+            dolore fugit sed excepturi neque id?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus earum distinctio inventore error
+            quae a, suscipit quidem asperiores nemo porro aperiam quod dicta dolorem harum odit debitis! Distinctio,
+            quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, necessitatibus reiciendis. Sed,
+            consectetur impedit ipsum dolorem velit placeat labore enim exercitationem voluptas, hic itaque iste? Minus
+            nam excepturi sequi placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et ipsa
+            obcaecati laboriosam dolores. Dolore quaerat repellat sit. Temporibus quaerat quisquam dicta molestiae. Ea,
+            dolore fugit sed excepturi neque id?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus earum distinctio inventore error
+            quae a, suscipit quidem asperiores nemo porro aperiam quod dicta dolorem harum odit debitis! Distinctio,
+            quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, necessitatibus reiciendis. Sed,
+            consectetur impedit ipsum dolorem velit placeat labore enim exercitationem voluptas, hic itaque iste? Minus
+            nam excepturi sequi placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et ipsa
+            obcaecati laboriosam dolores. Dolore quaerat repellat sit. Temporibus quaerat quisquam dicta molestiae. Ea,
+            dolore fugit sed excepturi neque id?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus earum distinctio inventore error
+            quae a, suscipit quidem asperiores nemo porro aperiam quod dicta dolorem harum odit debitis! Distinctio,
+            quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, necessitatibus reiciendis. Sed,
+            consectetur impedit ipsum dolorem velit placeat labore enim exercitationem voluptas, hic itaque iste? Minus
+            nam excepturi sequi placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et ipsa
+            obcaecati laboriosam dolores. Dolore quaerat repellat sit. Temporibus quaerat quisquam dicta molestiae. Ea,
+            dolore fugit sed excepturi neque id?</p>
+    </main>
+</body>
+
+</html>
