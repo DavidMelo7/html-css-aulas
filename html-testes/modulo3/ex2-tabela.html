@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+       hierarquia de tabelas (simples)
+       table = tabela                           tag= table
+            table row = linha da tabela           tag = tr  
+                table header = cabeçalho da tabel    tag = th
+                table data = dado da tabela          tag= td
+
+        estrutura para tabela grande
+        
+        thead 
+        tbody
+        tfoot
+
+        Colspan: Mescla para o lado (coluna).
+        Rowspan: Mescla para baixo (linha).
+
+        col: Indica que a célula é o cabeçalho de uma coluna
+        row: Indica que a célula é o cabeçalho de uma linha
+        colgroup: Define o cabeçalho para um grupo de colunas
+        rowgroup: Define o cabeçalho para um grupo de linhas
+    -->
+
+    <table>
+        <tr>
+            <th scope="col">GRUPOS</th>
+            <th scope="col">NOMES</th>
+            <th scope="colgroup" colspan="2">FILMES</th>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="3">mulheres</th>
+            <td>ana maria santos</td>
+            <td>alien</td>
+            <td>rambo</td>
+        </tr>
+        <tr>
+            <td>Juliana Paes</td>
+            <td>Dona Flor e Seus Dois Maridos</td>
+            <td>A Despedida</td>
+        </tr>
+        <tr>
+            <td>Alice Braga</td>
+            <td>Cidade de Deus</td>
+            <td>Eu Sou a Lenda</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="3">homens</th>
+            <td>Lázaro Ramos</td>
+            <td>Madame Satã</td>
+            <td>Ó Paí, Ó</td>
+        </tr>
+        <tr>
+            <td>Selton Mello</td>
+            <td>O Auto da Compadecida</td>
+            <td>O Palhaço</td>
+        </tr>
+        <tr>
+            <td>Marco Nanini</td>
+            <td>Carlota Joaquina</td>
+            <td>Lisbela e o Prisioneiro</td>
+        </tr>
+    </table>
+</body>
+
+</html>

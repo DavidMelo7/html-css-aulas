@@ -11,10 +11,29 @@
             background-image: linear-gradient(to bottom, #55ff747c, #0b5b00)
         }
 
-        .foto-campeao{
+        .foto-campeao {
             border-radius: 10px;
         }
 
+        td,th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+
+        th {
+            background-color: rgb(205, 255, 255);
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: rgb(131, 131, 131);
+        }
 
     </style>
 </head>
@@ -23,13 +42,20 @@
     <!-- 
        hierarquia de tabelas (simples)
        table = tabela                           tag= table
-            table row = linha horizontal          tag = tr  
+            table row = linha da tabela           tag = tr  
                 table header = cabeçalho da tabel    tag = th
                 table data = dado da tabela          tag= td
+
+        estrutura para tabela grande
+        
+        thead 
+        tbody
+        tfoot
     -->
 
-    <table border="1">
+    <table>
         <thead>
+            <caption>brasileirão</caption>
             <tr>
                 <th colspan="7">Brasileirão Série A 2022</th>
             </tr>
@@ -143,7 +169,7 @@
             media="(min-width: 350px)">
         <img class="foto-campeao" src="https://i.ytimg.com/vi/D6tvgm7P2XY/maxresdefault.jpg" alt="charizard"
             width="750px">
-        </picture>
+    </picture>
 </body>
 
 </html>
