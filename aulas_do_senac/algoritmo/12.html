@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<script>
+    estado = window.prompt("qual seu estado");
+    preco = Number(window.prompt("qual preço do produto"));
+
+    if (estado == "sp") {
+        imposto = preco * 0.05;
+    }
+    else if (estado == "rj") {
+        imposto = preco * 0.06;
+    }
+    else if (estado == "mg") {
+        imposto = preco * 0.07;
+    }
+    else {
+        imposto = preco * 0.04;
+    }
+
+    novo_preco = preco + imposto;
+
+    document.write("o valor do imporsto é " + imposto);
+    document.write("<br>preço do produto com imposto " + novo_preco);
+
+</script>

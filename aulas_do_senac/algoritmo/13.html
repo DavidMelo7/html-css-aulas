@@ -1,0 +1,19 @@
+<meta charset="UTF-8">  
+<script>
+    pontos = Number(window.prompt("quantos pontos você possui"));
+
+    if (pontos <= 10000) {
+        resultado = pontos * 0.000015268;
+    }
+    else if (pontos <= 50000) {
+        resultado = pontos * 0.000025368;
+    }
+    else if (pontos <= 100000) {
+        resultado = pontos * 0.000045274;
+    }
+    else if (pontos >= 100000) { 
+        resultado = pontos * 0.000062532;
+        };
+
+        document.write("você recebera na troca " + resultado + ("R$"));
+</script>
