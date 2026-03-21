@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form com exercicio</title>
+</head>
+
+<body>
+    <form id="meuForm">
+        <div>
+            <label for="km">Quanto quilometros você rodou?</label>
+            <input type="number" id="km" required>
+        </div>
+
+        <div>
+            <label for="litros">Combustível gasto em lt?</label>
+            <input type="number" id="litros" required>
+        </div>
+        <div>
+            <button type="button" onclick="calcular()">Enviar</button>
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            const km = parseFloat(document.getElementById('km').value);
+            const litros = parseFloat(document.getElementById('litros').value);
+            const divResultado = document.getElementById('resultado');
+
+            const km_l = km / litros;
+            let mensagem = "Desempenho: " + km_l.toFixed(2) + " km/l. ";
+
+            if (km_l >= 12) {
+                mensagem += "Bom desempenho!";
+            }
+
+            divResultado.innerHTML = mensagem;
+        }
+    </script>
+</body>
+
+</html>
