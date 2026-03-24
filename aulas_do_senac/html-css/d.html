@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Corrêa</title>
+    <style>
+        /* Configurações de Layout */
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #ffffff;
+            /* Fundo pontilhado discreto */
+            background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+        /* Divisão Lateral */
+        .sidebar {
+            width: 20%;
+            border-right: 1.5px solid #000;
+        }
+
+        /* Área de Conteúdo */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        .logo-estrela {
+            width: 30px; /* Ajuste o tamanho da sua estrela aqui */
+            margin-right: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        /* Container Centralizado para a Imagem do Post-it */
+        .post-it-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .post-it-img {
+            max-width: 400px; /* Ajuste o tamanho máximo da imagem do post-it */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Linha vertical lateral -->
+    <div class="sidebar"></div>
+
+    <div class="main-content">
+        <header>
+            <div class="brand">
+                <!-- ESPAÇO PARA A IMAGEM DA ESTRELA -->
+                <img src="src/assests/images/cs-star.png" alt="Logo" class="logo-estrela">
+                professor corrêa
+            </div>
+            
+            <nav>
+                <a href="URL_DO_GITHUB">github</a>
+                <a href="URL_DO_INSTAGRAM">instagram</a>
+            </nav>
+        </header>
+
+        <div class="post-it-container">
+            <!-- ESPAÇO PARA A IMAGEM DO POST-IT COMPLETO -->
+            <img src="..//html-css/src/assests/images/cs-card.png" alt="Post-it Coming Soon" class="post-it-img">
+        </div>
+    </div>
+
+</body>
+</html>
