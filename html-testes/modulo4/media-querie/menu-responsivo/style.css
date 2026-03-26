@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    padding: 0PX;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgba(137, 43, 226, 0.449);
+} 
+
+header {        
+    background-color: rgba(137, 43, 226, 0.778);
+    text-align: center;
+}
+
+menu > ul > li > a {
+    background-color: rgb(123, 17, 223);
+    padding: 10px;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    border-top: 3px solid rgb(165, 73, 251);
+}
