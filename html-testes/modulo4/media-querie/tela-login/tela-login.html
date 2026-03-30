@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="img">
+            <img src="" alt="imagem-login">
+        </div>
+        <div id="cad">
+            <form action="cadastro.js" method="post">
+                <div>
+                    <label for="iusuario">usuario: </label>
+                    <input type="text" name="usuario" id="iusuario" required placeholder="nome de usuario">
+                </div>
+                <div>
+                    <label for="isenha">senha: </label>
+                    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="insira a senha"
+                        autocomplete="current-password">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="limpar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

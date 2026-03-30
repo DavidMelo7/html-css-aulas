@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black url("pexels-codioful-7130573.jpg") center center / cover no-repeat fixed;
+}
+
+main {
+    
+    background-color: aliceblue;
+    width: 60vw;
+    height: ;
+}
