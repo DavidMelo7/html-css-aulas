@@ -10,26 +10,28 @@
 
 <body>
     <main>
-        <div id="img">
-            <img src="" alt="imagem-login">
-        </div>
-        <div id="cad">
-            <form action="cadastro.js" method="post">
-                <div>
-                    <label for="iusuario">usuario: </label>
-                    <input type="text" name="usuario" id="iusuario" required placeholder="nome de usuario">
-                </div>
-                <div>
-                    <label for="isenha">senha: </label>
-                    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="insira a senha"
-                        autocomplete="current-password">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="limpar">
-                </div>
-            </form>
-        </div>
+        <section id="tela">
+            <div id="imagem">
+            </div>
+            <div id="cad">
+                <form action="cadastro.js" method="post">
+                    <h1>Login</h1>
+                    <div>
+                        <label for="iusuario">usuario: </label>
+                        <input type="text" name="usuario" id="iusuario" required placeholder="nome de usuario">
+                    </div>
+                    <div>
+                        <label for="isenha">senha: </label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="insira a senha"
+                            autocomplete="current-password">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="limpar">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
 </body>
