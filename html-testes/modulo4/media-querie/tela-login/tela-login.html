@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="outras-telas.css">
 </head>
 
 <body>
@@ -18,18 +19,22 @@
                     <h1>Login</h1>
                     <div>
                         <label for="iusuario">usuario: </label>
-                        <input type="text" name="usuario" id="iusuario" required placeholder="nome de usuario">
+                        <input type="text" name="usuario" id="iusuario" required placeholder=" NOME DE USUARIO">
                     </div>
                     <div>
                         <label for="isenha">senha: </label>
-                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="insira a senha"
-                            autocomplete="current-password">
+                        <input type="password" name="senha" id="isenha" required minlength="8"
+                            placeholder=" INSERIR A SENHA" autocomplete="current-password">
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="limpar">
+                    <div id="botao">
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="limpar" type="reset" value="limpar">
                     </div>
                 </form>
+            </div>
+            <div class="direitos">
+                Direitos de David de Melo Ferreira.
+                Visite meu <a href="https://github.com/DavidMelo7" target="_blank">GitHub</a>
             </div>
         </section>
     </main>
