@@ -12,17 +12,17 @@ main {
     height: 100vh;
     display: flex;
     padding: 112px 64px;
-    background-color: beige;
+    background: black url("fundo.jpg") center center / cover no-repeat fixed;
 }
 
 .borda {
-    border: 1px solid black;
+    outline: 1px solid black;
     gap: 80px;
     justify-content: center;
     align-items: center;
     display: flex;
     padding: 5px;
-    background-color: white;
+    background-color: rgba(248, 255, 249, 0.875);
     box-shadow: 0 0 0 1px rgb(118, 118, 118);
 }
 
@@ -34,8 +34,7 @@ aside {
 }
 
 img {
-    max-width: 40%; /* Faz com que a imagem ocupe metade do espaço ou menos */
-
+    max-width: 40%; 
 
 }
 
